@@ -1,0 +1,5 @@
+curl -i -X POST -H "Content-Type:application/json" -d "{ \"Description\": \"some useful work [2]\", \"Duration\": 30 }" http://localhost:3000/api/tasks //returns 201 created
+curl -i -X PUT -H "Content-Type:application/json" -d "{ \"Id\" : 2, \"Description\": \"some useful work [2]\", \"Duration\": 60 }" http://localhost:3000/api/tasks
+curl -X GET http://localhost:3000/api/tasks
+curl -X GET http://localhost:3000/api/tasks/2
+curl -X DELETE http://localhost:3000/api/tasks/2
